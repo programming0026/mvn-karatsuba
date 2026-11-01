@@ -1,11 +1,15 @@
 package com.juniverse.karatsuba;
 
+
+import java.util.logging.Logger;
 /**
  * Ejemplo: multiplica dos enteros y dos decimales grandes con Karatsuba.
  *
  * @author ajuar
  */
 public class Main {
+    private static final Logger LOGGER = AppLogger.get(Main.class);
+
 
     /**
      * Punto de entrada.
@@ -18,8 +22,8 @@ public class Main {
         String num2 = "987654321987654321";
 
         String resultInt = Karatsuba.multiply(num1, num2);
-        System.out.println("Multiplicacion de enteros:");
-        System.out.println(NumberFormatUtil.getFormat(num1) + " * " + 
+        LOGGER.info("Multiplicacion de enteros:");
+        LOGGER.info(NumberFormatUtil.getFormat(num1) + " * " + 
                 NumberFormatUtil.getFormat(num2) + " = " + 
                 NumberFormatUtil.getFormat(resultInt));
 
@@ -28,8 +32,8 @@ public class Main {
         String num4 = "987654321.123456789";
 
         String resultDecimal = Karatsuba.multiply(num3, num4);
-        System.out.println("\nMultiplicacion de decimales:");
-        System.out.println(NumberFormatUtil.getFormat(num3) + " * " + 
+        LOGGER.info("\nMultiplicacion de decimales:");
+        LOGGER.info(NumberFormatUtil.getFormat(num3) + " * " + 
                 NumberFormatUtil.getFormat(num4) + " = " + 
                 NumberFormatUtil.getFormat(resultDecimal));
     }
