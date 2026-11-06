@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * Multiplicación de Karatsuba para enteros y decimales de precisión arbitraria.
  * Reduce 4 multiplicaciones de media longitud a 3, con complejidad O(n^1.585).
  *
- * @author ajuar
+ * @author Java Universe
  */
 public final class Karatsuba {
 

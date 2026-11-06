@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 /**
  * Ejemplo: multiplica dos enteros y dos decimales grandes con Karatsuba.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class Main {
     private static final Logger LOGGER = AppLogger.get(Main.class);

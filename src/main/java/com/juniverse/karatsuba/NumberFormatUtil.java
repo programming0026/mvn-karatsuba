@@ -8,7 +8,7 @@ import java.util.Locale;
 /**
  * Da formato de miles (configuración regional es-MX) a números dados como texto.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public final class NumberFormatUtil {
 
